@@ -1,7 +1,7 @@
 #Rotten Apple V1.0
 #Created By: LoWPoWeR
 #Desc: A ROT 13 Decrypter/Encrypter
-#---------------------------#
+#---------------------------
 
 #imports
 import codecs 
