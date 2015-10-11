@@ -1,0 +1,43 @@
+#Rotten Apple V1.0
+#Created By: LoWPoWeR
+#Desc: A ROT 13 Decrypter/Encrypter
+#---------------------------#
+
+#imports
+import codecs 
+import sys
+
+program = True #keeps script active until ''
+
+#prompt user with 3 choices. (encode, decode, or exit).
+#after every decrypt/encrypt it will go back to main menu.
+while program:
+        choose = input("\
+      Welcome to Rottten Apples: The ROT13 Decrypter & Encrpyter\
+                Enter '1' for Decrypter         Enter '2' For Encrypter\
+                         Enter '' to Exit                Created By: LoWPoWeR\
+                            Enter Choice Here: ") 
+        
+        #if user choose 'Exit" they will exit."
+        if choose == "":
+                sys.exit()
+        
+        #if they choose Encrypt they will enter the value and we will return the encode version.
+        elif choose == '2':
+                print ("You have chosen the Encrypter!")
+                message_2 = input("Enter the nomral text you'd like to encrpyt with ROT13: (Press 'Enter' To Exit) ")
+                message_2encrypt = codecs.encode(message_2, 'rot_13')
+                print (message_2encrypt)
+                        #they may still exit via ''
+                if message_2 == "":
+                        sys.exit()
+                        
+                #if they choose decode they will enter the value adn we will return the decode version.
+        elif choose == '1':
+                print ("You have chosen the Decrypter!")
+                message_1 = input("Enter the ROT13 message you'd like to decrypt: (Press 'Enter' To Exit)")
+                message_1decrypt = codecs.decode(message_1, 'rot_13')
+                print (message_1decrypt)
+                        #they may still exit via ''
+                if message_1 == "":
+                        sys.exit()
