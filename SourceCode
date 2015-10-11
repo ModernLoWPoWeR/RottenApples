@@ -1,7 +1,8 @@
+
 #Rotten Apple V1.0
 #Created By: LoWPoWeR
 #Desc: A ROT 13 Decrypter/Encrypter
-#---------------------------
+#---------------------------#
 
 #imports
 import codecs 
@@ -13,7 +14,7 @@ program = True #keeps script active until ''
 #after every decrypt/encrypt it will go back to main menu.
 while program:
         choose = input("\
-      Welcome to Rottten Apples: The ROT13 Decrypter & Encrpyter\
+      Welcome to Rotten Apples: The ROT13 Decrypter & Encrpyter\
                 Enter '1' for Decrypter         Enter '2' For Encrypter\
                          Enter '' to Exit                Created By: LoWPoWeR\
                             Enter Choice Here: ") 
